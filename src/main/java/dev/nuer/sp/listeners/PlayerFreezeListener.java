@@ -12,6 +12,9 @@ import org.bukkit.event.player.PlayerInteractEvent;
 import org.bukkit.event.player.PlayerMoveEvent;
 import org.bukkit.event.player.PlayerPickupItemEvent;
 
+/**
+ * Class that cancels all player events while they are frozen
+ */
 public class PlayerFreezeListener implements Listener {
 
     @EventHandler

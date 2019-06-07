@@ -10,6 +10,9 @@ import org.bukkit.event.inventory.InventoryMoveItemEvent;
 import org.bukkit.event.player.PlayerDropItemEvent;
 import org.bukkit.event.player.PlayerQuitEvent;
 
+/**
+ * Class that handles all of the staff mode events, prevents players from dropping the tools
+ */
 public class StaffModeInventoryListener implements Listener {
 
     @EventHandler

@@ -5,6 +5,9 @@ import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
 import org.bukkit.event.entity.PlayerDeathEvent;
 
+/**
+ * Class that handles adding the dead players inventory to the map of inventories
+ */
 public class PlayerDeathListener implements Listener {
 
     @EventHandler

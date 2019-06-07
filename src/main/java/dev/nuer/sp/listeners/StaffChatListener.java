@@ -9,6 +9,9 @@ import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
 import org.bukkit.event.player.AsyncPlayerChatEvent;
 
+/**
+ * Class that handles the staff chat component of the plugin
+ */
 public class StaffChatListener implements Listener {
 
     @EventHandler

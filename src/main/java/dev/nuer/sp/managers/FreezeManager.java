@@ -5,9 +5,19 @@ import org.bukkit.entity.Player;
 
 import java.util.ArrayList;
 
+/**
+ * Class that handles toggling if a player is frozen or not
+ */
 public class FreezeManager {
+    //Store a list of the players that are frozen
     public static ArrayList<Player> frozenPlayers = new ArrayList<>();
 
+    /**
+     * Sets the player to freeze to being frozen
+     *
+     * @param executor       Player, the player who from the target
+     * @param playerToFreeze Player, the player to freeze
+     */
     public static void freeze(Player executor, Player playerToFreeze) {
         if (!frozenPlayers.contains(playerToFreeze)) {
             frozenPlayers.add(playerToFreeze);
@@ -18,6 +28,12 @@ public class FreezeManager {
         }
     }
 
+    /**
+     * Unfreezes the player who was frozen
+     *
+     * @param executor       Player, the player who from the target
+     * @param playerToFreeze Player, the player to unfreeze
+     */
     public static void unfreeze(Player executor, Player playerToFreeze) {
         if (frozenPlayers.contains(playerToFreeze)) {
             frozenPlayers.remove(playerToFreeze);

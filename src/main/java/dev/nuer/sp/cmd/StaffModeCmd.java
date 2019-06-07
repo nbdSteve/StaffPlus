@@ -8,6 +8,9 @@ import org.bukkit.command.CommandExecutor;
 import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Player;
 
+/**
+ * Class that handles the /staff-mode command
+ */
 public class StaffModeCmd implements CommandExecutor {
 
     @Override

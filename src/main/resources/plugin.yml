@@ -1,4 +1,4 @@
-name: StaffPlus
+name: FrontierStaff
 version: ${project.version}
 main: dev.nuer.sp.StaffPlus
 api-version: 1.13

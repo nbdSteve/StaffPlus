@@ -1,6 +1,6 @@
 <component name="ArtifactManager">
   <artifact type="jar" name="staff+">
-    <output-path>$USER_HOME$/Desktop/1.14 server/plugins</output-path>
+    <output-path>$USER_HOME$/Desktop/minecraft/server stuff/Server Files/plugins</output-path>
     <root id="archive" name="staff+.jar">
       <element id="module-output" name="StaffPlus" />
     </root>

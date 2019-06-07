@@ -10,8 +10,13 @@ import org.bukkit.plugin.java.JavaPlugin;
 
 import java.util.logging.Logger;
 
+/**
+ * Main class for the plugin
+ */
 public final class StaffPlus extends JavaPlugin {
+    //Store the plugin instance
     public static StaffPlus instance;
+    //Store the plugin logger
     public static Logger LOGGER;
 
     @Override
@@ -31,11 +36,18 @@ public final class StaffPlus extends JavaPlugin {
         }
     }
 
+    /**
+     * Void method to create the files for the plugin
+     * @param fileManager FileManager, the file manager class
+     */
     public void fileHandler(FileManager fileManager) {
         fileManager.add("config", "staff+.yml");
         fileManager.add("messages", "messages.yml");
     }
 
+    /**
+     * Registers all of the plugin events
+     */
     public void registerEvents() {
         PluginManager pm = getServer().getPluginManager();
         pm.registerEvents(new PlayerFreezeListener(), this);
@@ -45,6 +57,9 @@ public final class StaffPlus extends JavaPlugin {
         pm.registerEvents(new PlayerDeathListener(), this);
     }
 
+    /**
+     * Registers all of the plugin commands
+     */
     public void registerCommands() {
         getCommand("freeze").setExecutor(new FreezeCmd());
         getCommand("unfreeze").setExecutor(new UnfreezeCmd());

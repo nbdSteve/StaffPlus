@@ -5,6 +5,7 @@ import dev.nuer.sp.managers.InventoryRestoreManager;
 import dev.nuer.sp.managers.StaffModeManager;
 import dev.nuer.sp.nbtapi.NBTItem;
 import dev.nuer.sp.utils.RandomTeleportUtil;
+import org.bukkit.Bukkit;
 import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
@@ -13,6 +14,9 @@ import org.bukkit.event.entity.EntityDamageByEntityEvent;
 import org.bukkit.event.player.PlayerInteractEntityEvent;
 import org.bukkit.event.player.PlayerInteractEvent;
 
+/**
+ * Listener class which handles all of the staff tools and interactions
+ */
 public class StaffToolListener implements Listener {
 
     @EventHandler
@@ -38,6 +42,7 @@ public class StaffToolListener implements Listener {
         if (StaffModeManager.playersInStaffMode.containsKey(event.getDamager())) {
             NBTItem item = new NBTItem(((Player) event.getDamager()).getInventory().getItemInHand());
             try {
+                event.setCancelled(true);
                 if (item.getBoolean("staff+.tool.freeze")) {
                     FreezeManager.freeze((Player) event.getDamager(), (Player) event.getEntity());
                 }
@@ -45,6 +50,7 @@ public class StaffToolListener implements Listener {
                 //Do nothing
             }
             try {
+                event.setCancelled(true);
                 if (item.getBoolean("staff+.tool.restore")) {
                     InventoryRestoreManager.restore((Player) event.getDamager(), (Player) event.getEntity());
                 }
@@ -52,14 +58,16 @@ public class StaffToolListener implements Listener {
                 //Do nothing
             }
             try {
+                event.setCancelled(true);
                 if (item.getBoolean("staff+.tool.invsee")) {
-                    //Bukkit.getServer().dispatchCommand(Bukkit.getServer().getConsoleSender(), "invsee " + event.getEntity().getName());
-                    ((Player) event.getDamager()).openInventory(((Player) event.getEntity()).getInventory());
+                    Bukkit.getServer().dispatchCommand(event.getDamager(), "invsee " + event.getEntity().getName());
+                    //((Player) event.getDamager()).openInventory(((Player) event.getEntity()).getInventory());
                 }
             } catch (NullPointerException notATool) {
                 //Do nothing
             }
             try {
+                event.setCancelled(true);
                 if (item.getBoolean("staff+.tool.randtp")) {
                     RandomTeleportUtil.teleport((Player) event.getDamager());
                 }
