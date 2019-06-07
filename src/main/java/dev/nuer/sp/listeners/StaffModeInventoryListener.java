@@ -1,5 +1,6 @@
 package dev.nuer.sp.listeners;
 
+import dev.nuer.sp.managers.StaffModeManager;
 import dev.nuer.sp.nbtapi.NBTItem;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
@@ -7,8 +8,14 @@ import org.bukkit.event.inventory.InventoryClickEvent;
 import org.bukkit.event.inventory.InventoryDragEvent;
 import org.bukkit.event.inventory.InventoryMoveItemEvent;
 import org.bukkit.event.player.PlayerDropItemEvent;
+import org.bukkit.event.player.PlayerQuitEvent;
 
 public class StaffModeInventoryListener implements Listener {
+
+    @EventHandler
+    public void disconnect(PlayerQuitEvent event) {
+        if (StaffModeManager.playersInStaffMode.containsKey(event.getPlayer())) StaffModeManager.remove(event.getPlayer());
+    }
 
     @EventHandler
     public void playerInventory(InventoryMoveItemEvent event) {

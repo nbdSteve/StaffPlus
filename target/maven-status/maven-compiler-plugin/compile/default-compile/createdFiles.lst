@@ -1,2 +1,3 @@
 dev\nuer\sp\listeners\PlayerDeathListener.class
 dev\nuer\sp\managers\InventoryRestoreManager.class
+dev\nuer\sp\cmd\RestoreCmd.class

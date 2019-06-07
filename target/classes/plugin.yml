@@ -22,3 +22,6 @@ commands:
     usage: /<command>
     description: toggle staff mode
     aliases: [sm, staffmode, staffm, staff]
+  restore:
+    usage: /<command>
+    description: restore a players inventory

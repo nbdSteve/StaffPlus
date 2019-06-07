@@ -13,7 +13,11 @@ public class StaffChatListener implements Listener {
 
     @EventHandler
     public void playerChat(AsyncPlayerChatEvent event) {
-        if (StaffChatManager.playersInStaffChat.contains(event.getPlayer())) event.setCancelled(true);
+        if (StaffChatManager.playersInStaffChat.contains(event.getPlayer())) {
+            event.setCancelled(true);
+        } else {
+            return;
+        }
         for (Player player : Bukkit.getOnlinePlayers()) {
             if (player.hasPermission("staff+.chat")) {
                 String prefix = FileManager.get("config").getString("staff-chat-prefix").replace("{sender}", event.getPlayer().getName());

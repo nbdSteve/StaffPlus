@@ -14,9 +14,11 @@ D:\Java\minecraft\private\frontier\StaffPlus\src\main\java\dev\nuer\sp\StaffPlus
 D:\Java\minecraft\private\frontier\StaffPlus\src\main\java\dev\nuer\sp\utils\YamlFileUtil.java
 D:\Java\minecraft\private\frontier\StaffPlus\src\main\java\dev\nuer\sp\managers\InventoryRestoreManager.java
 D:\Java\minecraft\private\frontier\StaffPlus\src\main\java\dev\nuer\sp\nbtapi\NBTFile.java
+D:\Java\minecraft\private\frontier\StaffPlus\src\main\java\dev\nuer\sp\listeners\PlayerDeathListener.java
 D:\Java\minecraft\private\frontier\StaffPlus\src\main\java\dev\nuer\sp\listeners\StaffToolListener.java
 D:\Java\minecraft\private\frontier\StaffPlus\src\main\java\dev\nuer\sp\nbtapi\ReflectionMethod.java
 D:\Java\minecraft\private\frontier\StaffPlus\src\main\java\dev\nuer\sp\nbtapi\ClassWrapper.java
+D:\Java\minecraft\private\frontier\StaffPlus\src\main\java\dev\nuer\sp\cmd\RestoreCmd.java
 D:\Java\minecraft\private\frontier\StaffPlus\src\main\java\dev\nuer\sp\utils\RandomTeleportUtil.java
 D:\Java\minecraft\private\frontier\StaffPlus\src\main\java\dev\nuer\sp\nbtapi\NBTType.java
 D:\Java\minecraft\private\frontier\StaffPlus\src\main\java\dev\nuer\sp\cmd\StaffModeCmd.java

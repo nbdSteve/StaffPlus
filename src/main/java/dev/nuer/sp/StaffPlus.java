@@ -1,11 +1,10 @@
 package dev.nuer.sp;
 
-import dev.nuer.sp.cmd.FreezeCmd;
-import dev.nuer.sp.cmd.StaffChatCmd;
-import dev.nuer.sp.cmd.StaffModeCmd;
-import dev.nuer.sp.cmd.UnfreezeCmd;
+import dev.nuer.sp.cmd.*;
 import dev.nuer.sp.listeners.*;
 import dev.nuer.sp.managers.FileManager;
+import dev.nuer.sp.managers.StaffModeManager;
+import org.bukkit.entity.Player;
 import org.bukkit.plugin.PluginManager;
 import org.bukkit.plugin.java.JavaPlugin;
 
@@ -27,7 +26,9 @@ public final class StaffPlus extends JavaPlugin {
 
     @Override
     public void onDisable() {
-        // Plugin shutdown logic
+        for (Player player : StaffModeManager.playersInStaffMode.keySet()) {
+            StaffModeManager.remove(player);
+        }
     }
 
     public void fileHandler(FileManager fileManager) {
@@ -49,5 +50,6 @@ public final class StaffPlus extends JavaPlugin {
         getCommand("unfreeze").setExecutor(new UnfreezeCmd());
         getCommand("staff-chat").setExecutor(new StaffChatCmd());
         getCommand("staff-mode").setExecutor(new StaffModeCmd());
+        getCommand("restore").setExecutor(new RestoreCmd());
     }
 }
