@@ -1,0 +1,16 @@
+name: StaffPlus
+version: 1.0-SNAPSHOT
+main: dev.nuer.sp.StaffPlus
+api-version: 1.13
+prefix: Staff+
+authors: [Nuer]
+website: https://nuer.dev
+commands:
+  freeze:
+    usage: /<command>
+    description: freeze the specified player
+    aliases: [fre]
+  unfreeze:
+    usage: /<command>
+    description: unfreeze the specified player
+    aliases: [unf]

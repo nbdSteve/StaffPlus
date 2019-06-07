@@ -1,0 +1,15 @@
+# Freeze Messages
+# - Admin -
+executor-player-frozen:
+  - "&6&lStaff+&e: &7You have successfully frozen &a{player}&7."
+executor-player-already-frozen:
+  - "&6&lStaff+&e: &cUNABLE &7to complete action, &a{player} &7is already frozen."
+executor-player-unfrozen:
+  - "&6&lStaff+&e: &7You have successfully unfrozen &a{player}&7."
+executor-player-not-frozen:
+  - "&6&lStaff+&e: &cUNABLE &7to complete action, &a{player} &7is not frozen."
+# - Receiver -
+receiver-player-frozen:
+  - "&6&lStaff+&e: &7You have been &c&l*FROZEN* &7do not leave the server! Join &f&ndiscord&7."
+receiver-player-unfrozen:
+  - "&6&lStaff+&e: &7You have been &c&l*UNFROZEN* &7sorry for the inconvenience."
