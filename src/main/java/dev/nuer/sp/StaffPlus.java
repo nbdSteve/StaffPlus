@@ -4,10 +4,7 @@ import dev.nuer.sp.cmd.FreezeCmd;
 import dev.nuer.sp.cmd.StaffChatCmd;
 import dev.nuer.sp.cmd.StaffModeCmd;
 import dev.nuer.sp.cmd.UnfreezeCmd;
-import dev.nuer.sp.listeners.PlayerFreezeListener;
-import dev.nuer.sp.listeners.StaffChatListener;
-import dev.nuer.sp.listeners.StaffModeInventoryListener;
-import dev.nuer.sp.listeners.StaffToolListener;
+import dev.nuer.sp.listeners.*;
 import dev.nuer.sp.managers.FileManager;
 import org.bukkit.plugin.PluginManager;
 import org.bukkit.plugin.java.JavaPlugin;
@@ -44,6 +41,7 @@ public final class StaffPlus extends JavaPlugin {
         pm.registerEvents(new StaffChatListener(), this);
         pm.registerEvents(new StaffModeInventoryListener(), this);
         pm.registerEvents(new StaffToolListener(), this);
+        pm.registerEvents(new PlayerDeathListener(), this);
     }
 
     public void registerCommands() {

@@ -2,7 +2,7 @@ staff-chat-prefix: '&4&l[&c&lSC&4&l] &6{sender}&e: &c'
 
 tools:
   freeze:
-    material: 'wooden_hoe:0'
+    material: 'wood_hoe:0'
     slot: 0
     name: '&c&lFreeze Tool'
     lore:
@@ -26,7 +26,7 @@ tools:
     item-flags:
       - 'hide_enchants'
   invsee:
-    material: 'golden_hoe:0'
+    material: 'gold_hoe:0'
     slot: 5
     name: '&c&lInventory Check Tool'
     lore:

@@ -1,10 +1,10 @@
 package dev.nuer.sp.listeners;
 
 import dev.nuer.sp.managers.FreezeManager;
+import dev.nuer.sp.managers.InventoryRestoreManager;
 import dev.nuer.sp.managers.StaffModeManager;
 import dev.nuer.sp.nbtapi.NBTItem;
 import dev.nuer.sp.utils.RandomTeleportUtil;
-import org.bukkit.Bukkit;
 import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
@@ -46,7 +46,7 @@ public class StaffToolListener implements Listener {
             }
             try {
                 if (item.getBoolean("staff+.tool.restore")) {
-                    //FreezeManager.freeze((Player) event.getDamager(), (Player) event.getEntity());
+                    InventoryRestoreManager.restore((Player) event.getDamager(), (Player) event.getEntity());
                 }
             } catch (NullPointerException notATool) {
                 //Do nothing
@@ -60,7 +60,7 @@ public class StaffToolListener implements Listener {
                 //Do nothing
             }
             try {
-                if (item.getBoolean("staff+.tool.randtp")){
+                if (item.getBoolean("staff+.tool.randtp")) {
                     RandomTeleportUtil.teleport((Player) event.getDamager());
                 }
             } catch (NullPointerException notATool) {

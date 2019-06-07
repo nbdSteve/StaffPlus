@@ -21,4 +21,4 @@ commands:
   staff-mode:
     usage: /<command>
     description: toggle staff mode
-    aliases: [sm, staffmode, staffm]
+    aliases: [sm, staffmode, staffm, staff]

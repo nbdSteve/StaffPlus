@@ -5,6 +5,12 @@ invalid-command:
 no-permission:
   - '&cError: &7You do not have permission to use that.'
 
+# Restore messages
+executor-restore-inventory:
+  - "&6&lStaff+&e: &7You have successfully restored &a{player}&7's inventory"
+receiver-restore-inventory:
+  - '&6&lStaff+&e: &7Your inventory has been restored by a staff member.'
+
 # Staff Mode Messgaes
 enter-staff-mode:
   - '&6&lStaff+&e: &7You have entered staff mode, you are now vanished.'
