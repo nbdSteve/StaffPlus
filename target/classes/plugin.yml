@@ -14,3 +14,11 @@ commands:
     usage: /<command>
     description: unfreeze the specified player
     aliases: [unf]
+  staff-chat:
+    usage: /<command>
+    description: toggle staff chat
+    aliases: [sc, staffchat, staffc]
+  staff-mode:
+    usage: /<command>
+    description: toggle staff mode
+    aliases: [sm, staffmode, staffm]

@@ -1,0 +1,49 @@
+staff-chat-prefix: '&4&l[&c&lSC&4&l] &6{sender}&e: &c'
+
+tools:
+  freeze:
+    material: 'wooden_hoe:0'
+    slot: 0
+    name: '&c&lFreeze Tool'
+    lore:
+      - '&7 '
+      - ' &f- &7Left-click a player to freeze them.'
+      - ' &f- &7Right-click a player to unfreeze them.'
+    enchantments:
+      - 'durability:50'
+    item-flags:
+      - 'hide_enchants'
+  restore:
+    material: 'stone_hoe:0'
+    slot: 3
+    name: '&c&lRestore Tool'
+    lore:
+      - '&7 '
+      - ' &f- &7Left-click a player to restore their previous inventory.'
+      - '&7&oInventories are kept in memory for 30 minutes.'
+    enchantments:
+      - 'durability:50'
+    item-flags:
+      - 'hide_enchants'
+  invsee:
+    material: 'golden_hoe:0'
+    slot: 5
+    name: '&c&lInventory Check Tool'
+    lore:
+      - '&7 '
+      - ' &f- &7Left-click a player to check their inventory.'
+    enchantments:
+      - 'durability:50'
+    item-flags:
+      - 'hide_enchants'
+  randtp:
+    material: 'iron_hoe:0'
+    slot: 8
+    name: '&c&lRandom Teleport Tool'
+    lore:
+      - '&7 '
+      - ' &f- &7Left-click to teleport to a random player.'
+    enchantments:
+      - 'durability:50'
+    item-flags:
+      - 'hide_enchants'

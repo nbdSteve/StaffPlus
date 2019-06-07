@@ -1,8 +1,13 @@
 package dev.nuer.sp;
 
 import dev.nuer.sp.cmd.FreezeCmd;
+import dev.nuer.sp.cmd.StaffChatCmd;
+import dev.nuer.sp.cmd.StaffModeCmd;
 import dev.nuer.sp.cmd.UnfreezeCmd;
-import dev.nuer.sp.listeners.PlayerListener;
+import dev.nuer.sp.listeners.PlayerFreezeListener;
+import dev.nuer.sp.listeners.StaffChatListener;
+import dev.nuer.sp.listeners.StaffModeInventoryListener;
+import dev.nuer.sp.listeners.StaffToolListener;
 import dev.nuer.sp.managers.FileManager;
 import org.bukkit.plugin.PluginManager;
 import org.bukkit.plugin.java.JavaPlugin;
@@ -19,8 +24,7 @@ public final class StaffPlus extends JavaPlugin {
         LOGGER = instance.getLogger();
         FileManager fm = new FileManager(this);
         fileHandler(fm);
-        getCommand("freeze").setExecutor(new FreezeCmd());
-        getCommand("unfreeze").setExecutor(new UnfreezeCmd());
+        registerCommands();
         registerEvents();
     }
 
@@ -36,6 +40,16 @@ public final class StaffPlus extends JavaPlugin {
 
     public void registerEvents() {
         PluginManager pm = getServer().getPluginManager();
-        pm.registerEvents(new PlayerListener(), this);
+        pm.registerEvents(new PlayerFreezeListener(), this);
+        pm.registerEvents(new StaffChatListener(), this);
+        pm.registerEvents(new StaffModeInventoryListener(), this);
+        pm.registerEvents(new StaffToolListener(), this);
+    }
+
+    public void registerCommands() {
+        getCommand("freeze").setExecutor(new FreezeCmd());
+        getCommand("unfreeze").setExecutor(new UnfreezeCmd());
+        getCommand("staff-chat").setExecutor(new StaffChatCmd());
+        getCommand("staff-mode").setExecutor(new StaffModeCmd());
     }
 }
