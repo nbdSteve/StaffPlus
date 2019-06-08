@@ -1,8 +1,7 @@
-package dev.nuer.sp.cmd;
+package dev.nuer.sp.cmd.admin;
 
 import dev.nuer.sp.StaffPlus;
 import dev.nuer.sp.managers.FreezeManager;
-import dev.nuer.sp.managers.InventoryRestoreManager;
 import dev.nuer.sp.utils.MessageUtil;
 import org.bukkit.Bukkit;
 import org.bukkit.command.Command;
@@ -11,13 +10,13 @@ import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Player;
 
 /**
- * Class that handles the /restore command for the plugin
+ * Class that handles the /freeze command
  */
-public class RestoreCmd implements CommandExecutor {
+public class FreezeCmd implements CommandExecutor {
 
     @Override
     public boolean onCommand(CommandSender sender, Command command, String label, String[] args) {
-        if (sender.hasPermission("staff+.restore")) {
+        if (sender.hasPermission("staff+.freeze")) {
             if (args.length == 1) {
                 Player target = Bukkit.getPlayer(args[0]);
                 if (!Bukkit.getOnlinePlayers().contains(target)) {
@@ -29,7 +28,7 @@ public class RestoreCmd implements CommandExecutor {
                     }
                     return true;
                 }
-                InventoryRestoreManager.restore((Player) sender, target);
+                FreezeManager.freeze((Player) sender, target);
             } else {
                 if (sender instanceof Player) {
                     MessageUtil.message("messages", "invalid-command", (Player) sender, "{reason}", "please specify a player to freeze");

@@ -1,38 +1,55 @@
+# Staff+
+# <3
+# Chat prefix for staff chat
 staff-chat-prefix: '&4&l[&c&lSC&4&l] &6{sender}&e: &c'
-vanish-command: 'sudo {player} v'
 
+# Commands run when the player does /staff-mode, these will run on entry and exit of staff mode
+staff-mode-commands:
+  - 'sudo {player} vanish'
+  - 'god {player}'
+
+# The tools given to the player when they are in staff mode
 tools:
   freeze:
-    material: 'wood_hoe:0'
+    material: 'packed_ice:0'
     slot: 0
-    name: '&c&lFreeze Tool'
+    name: '&b&lFreeze Player Tool'
     lore:
       - '&7 '
-      - ' &f- &7Left-click a player to freeze them.'
-      - ' &f- &7Right-click a player to unfreeze them.'
+      - '&7Left-click on a player with this tool'
+      - '&7to freeze them, they will not be able to move.'
+      - '&7 '
+      - '&7Right-click on a player with this tool'
+      - '&7to unfreeze them, they can move again.'
     enchantments:
       - 'durability:50'
     item-flags:
       - 'hide_enchants'
   restore:
-    material: 'stone_hoe:0'
+    material: 'redstone_torch_on:0'
     slot: 3
-    name: '&c&lRestore Tool'
+    name: '&c&lRestore Inventory Tool'
     lore:
       - '&7 '
-      - ' &f- &7Left-click a player to restore their previous inventory.'
-      - '&7&oInventories are kept in memory for 30 minutes.'
+      - '&7Left-click on a player with this tool to'
+      - '&7restore their inventory from their previous death.'
+      - '&7 '
+      - '&c&l**WARNING**'
+      - '&fThis will clear their current inventory.'
+      - '&7 '
+      - '&7&o(Inventories are kept in memory until the plugin restarts).'
     enchantments:
       - 'durability:50'
     item-flags:
       - 'hide_enchants'
   invsee:
-    material: 'gold_hoe:0'
+    material: 'watch:0'
     slot: 5
-    name: '&c&lInventory Check Tool'
+    name: '&a&lInventory Check Tool'
     lore:
       - '&7 '
-      - ' &f- &7Left-click a player to check their inventory.'
+      - '&7Left-click on a player with this tool'
+      - '&7to view their inventory.'
     enchantments:
       - 'durability:50'
     item-flags:
@@ -40,10 +57,11 @@ tools:
   randtp:
     material: 'iron_hoe:0'
     slot: 8
-    name: '&c&lRandom Teleport Tool'
+    name: '&b&lRandom Teleport Tool'
     lore:
       - '&7 '
-      - ' &f- &7Left-click to teleport to a random player.'
+      - '&7Left-click the air with this tool'
+      - '&7to teleport to a random player online.'
     enchantments:
       - 'durability:50'
     item-flags:

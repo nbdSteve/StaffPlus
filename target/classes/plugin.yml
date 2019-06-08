@@ -1,5 +1,5 @@
-name: FrontierStaff
-version: 1.0.3
+name: StaffPlus
+version: 1.0.4
 main: dev.nuer.sp.StaffPlus
 api-version: 1.13
 prefix: Staff+
@@ -7,13 +7,16 @@ authors: [Nuer]
 website: https://nuer.dev
 commands:
   freeze:
-    usage: /<command>
+    usage: /<command> {player}
     description: freeze the specified player
     aliases: [fre]
   unfreeze:
-    usage: /<command>
+    usage: /<command> {player}
     description: unfreeze the specified player
     aliases: [unf]
+  restore:
+    usage: /<command> {player}
+    description: restore a players inventory, use this if the died for an injust reason.
   staff-chat:
     usage: /<command>
     description: toggle staff chat
@@ -22,6 +25,7 @@ commands:
     usage: /<command>
     description: toggle staff mode
     aliases: [sm, staffmode, staffm, staff]
-  restore:
-    usage: /<command>
-    description: restore a players inventory
+  staff-plus:
+    usage: </command> {args}
+    description: try /s+ help for command help.
+    aliases: [s+, staff+, splus]

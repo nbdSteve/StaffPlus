@@ -1,4 +1,4 @@
-package dev.nuer.sp.cmd;
+package dev.nuer.sp.cmd.admin;
 
 import dev.nuer.sp.StaffPlus;
 import dev.nuer.sp.managers.StaffModeManager;

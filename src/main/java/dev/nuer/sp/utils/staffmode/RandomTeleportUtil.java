@@ -1,4 +1,4 @@
-package dev.nuer.sp.utils;
+package dev.nuer.sp.utils.staffmode;
 
 import org.bukkit.Bukkit;
 import org.bukkit.entity.Player;

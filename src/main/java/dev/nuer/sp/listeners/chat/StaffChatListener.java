@@ -1,4 +1,4 @@
-package dev.nuer.sp.listeners;
+package dev.nuer.sp.listeners.chat;
 
 import dev.nuer.sp.managers.FileManager;
 import dev.nuer.sp.managers.StaffChatManager;

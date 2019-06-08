@@ -1,10 +1,10 @@
-package dev.nuer.sp.listeners;
+package dev.nuer.sp.listeners.staffmode;
 
 import dev.nuer.sp.managers.FreezeManager;
 import dev.nuer.sp.managers.InventoryRestoreManager;
 import dev.nuer.sp.managers.StaffModeManager;
 import dev.nuer.sp.nbtapi.NBTItem;
-import dev.nuer.sp.utils.RandomTeleportUtil;
+import dev.nuer.sp.utils.staffmode.RandomTeleportUtil;
 import org.bukkit.Bukkit;
 import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;

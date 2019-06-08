@@ -1,4 +1,4 @@
-package dev.nuer.sp.listeners;
+package dev.nuer.sp.listeners.staffmode;
 
 import dev.nuer.sp.managers.StaffModeManager;
 import dev.nuer.sp.nbtapi.NBTItem;

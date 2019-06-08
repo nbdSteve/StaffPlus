@@ -1,4 +1,4 @@
-package dev.nuer.sp.cmd;
+package dev.nuer.sp.cmd.admin;
 
 import dev.nuer.sp.StaffPlus;
 import dev.nuer.sp.managers.FreezeManager;
@@ -10,9 +10,9 @@ import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Player;
 
 /**
- * Class that handles the /freeze command
+ * Class that handles the /unfreeze command
  */
-public class FreezeCmd implements CommandExecutor {
+public class UnfreezeCmd implements CommandExecutor {
 
     @Override
     public boolean onCommand(CommandSender sender, Command command, String label, String[] args) {
@@ -22,13 +22,13 @@ public class FreezeCmd implements CommandExecutor {
                 if (!Bukkit.getOnlinePlayers().contains(target)) {
                     if (sender instanceof Player) {
                         MessageUtil.message("messages", "invalid-command", (Player) sender, "{reason}",
-                                "The player you are trying to freeze to is not online");
+                                "The player you are trying to unfreeze to is not online");
                     } else {
                         StaffPlus.LOGGER.info("Invalid command, the player is not online.");
                     }
                     return true;
                 }
-                FreezeManager.freeze((Player) sender, target);
+                FreezeManager.unfreeze((Player) sender, target);
             } else {
                 if (sender instanceof Player) {
                     MessageUtil.message("messages", "invalid-command", (Player) sender, "{reason}", "please specify a player to freeze");

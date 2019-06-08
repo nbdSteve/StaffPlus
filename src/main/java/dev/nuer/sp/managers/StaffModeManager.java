@@ -2,7 +2,7 @@ package dev.nuer.sp.managers;
 
 import dev.nuer.sp.StaffPlus;
 import dev.nuer.sp.utils.MessageUtil;
-import dev.nuer.sp.utils.StaffModeUtil;
+import dev.nuer.sp.utils.staffmode.StaffModeUtil;
 import org.bukkit.Bukkit;
 import org.bukkit.entity.Player;
 import org.bukkit.inventory.ItemStack;
@@ -24,16 +24,8 @@ public class StaffModeManager {
     public static void add(Player player) {
         if (playersInStaffMode.get(player) != null) return;
         StaffModeUtil.setStaffMode(player);
-        try {
-            Bukkit.getServer().dispatchCommand(Bukkit.getConsoleSender(),
-                    FileManager.get("config").getString("vanish-command").replace("{player}", player.getName()));
-        } catch (Exception e) {
-            StaffPlus.LOGGER.severe("Error while entering staff mode! Unable to vanish the player: " + player.getName());
-        }
-        try {
-            Bukkit.getServer().dispatchCommand(Bukkit.getServer().getConsoleSender(), "god " + player.getName());
-        } catch (Exception e) {
-            StaffPlus.LOGGER.severe("Error while entering staff mode! Unable to god mode the player: " + player.getName());
+        for (String command : FileManager.get("config").getStringList("staff-mode-commands")) {
+            Bukkit.getServer().dispatchCommand(Bukkit.getConsoleSender(), command.replace("{player}", player.getName()));
         }
         MessageUtil.message("messages", "enter-staff-mode", player);
     }
@@ -46,16 +38,8 @@ public class StaffModeManager {
     public static void remove(Player player) {
         if (playersInStaffMode.get(player) == null) return;
         StaffModeUtil.removeStaffMode(player);
-        try {
-            Bukkit.getServer().dispatchCommand(Bukkit.getConsoleSender(),
-                    FileManager.get("config").getString("vanish-command").replace("{player}", player.getName()));
-        } catch (Exception e) {
-            StaffPlus.LOGGER.severe("Error while exiting staff mode! Unable to show the player: " + player.getName());
-        }
-        try {
-            Bukkit.getServer().dispatchCommand(Bukkit.getServer().getConsoleSender(), "god " + player.getName());
-        } catch (Exception e) {
-            StaffPlus.LOGGER.severe("Error while exiting staff mode! Unable to remove god mode from the player: " + player.getName());
+        for (String command : FileManager.get("config").getStringList("staff-mode-commands")) {
+            Bukkit.getServer().dispatchCommand(Bukkit.getConsoleSender(), command.replace("{player}", player.getName()));
         }
         MessageUtil.message("messages", "exit-staff-mode", player);
     }

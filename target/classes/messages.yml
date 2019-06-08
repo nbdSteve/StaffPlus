@@ -1,7 +1,12 @@
+# General plugin messages
 invalid-command:
-  - "&7--= &6&lStaff+&e: &fCommand Debug &7=--"
-  - " - &cError: &7There was a problem with the command you entered, please read the reason."
-  - " - &cReason: &e{reason}&7."
+  - '&7--= &6&lStaff+&e: &fCommand Debug &7=--'
+  - ' - &cError: &7There was a problem with the command you entered, please read the reason.'
+  - ' - &cReason: &e{reason}&7.'
+reload:
+  - '&6&lStaff+&e: &7You have reloaded all configuration files for the plugin.'
+help:
+  - '&6&lStaff+&e: &7Please refer to the GitHub wiki page for detailed command help.'
 no-permission:
   - '&cError: &7You do not have permission to use that.'
 

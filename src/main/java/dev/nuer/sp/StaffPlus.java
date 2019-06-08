@@ -1,7 +1,11 @@
 package dev.nuer.sp;
 
-import dev.nuer.sp.cmd.*;
+import dev.nuer.sp.cmd.StaffPlusCmd;
+import dev.nuer.sp.cmd.admin.*;
 import dev.nuer.sp.listeners.*;
+import dev.nuer.sp.listeners.chat.StaffChatListener;
+import dev.nuer.sp.listeners.staffmode.StaffModeInventoryListener;
+import dev.nuer.sp.listeners.staffmode.StaffToolListener;
 import dev.nuer.sp.managers.FileManager;
 import dev.nuer.sp.managers.StaffModeManager;
 import org.bukkit.entity.Player;
@@ -61,6 +65,7 @@ public final class StaffPlus extends JavaPlugin {
      * Registers all of the plugin commands
      */
     public void registerCommands() {
+        getCommand("staff-plus").setExecutor(new StaffPlusCmd());
         getCommand("freeze").setExecutor(new FreezeCmd());
         getCommand("unfreeze").setExecutor(new UnfreezeCmd());
         getCommand("staff-chat").setExecutor(new StaffChatCmd());
