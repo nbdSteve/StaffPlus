@@ -25,8 +25,8 @@ public class StaffModeManager {
         if (playersInStaffMode.get(player) != null) return;
         StaffModeUtil.setStaffMode(player);
         try {
-            Bukkit.getServer().dispatchCommand(Bukkit.getServer().getConsoleSender(),
-                    FileManager.get("config").getString("vanish-command") + player.getName());
+            Bukkit.getServer().dispatchCommand(Bukkit.getConsoleSender(),
+                    FileManager.get("config").getString("vanish-command").replace("{player}", player.getName()));
         } catch (Exception e) {
             StaffPlus.LOGGER.severe("Error while entering staff mode! Unable to vanish the player: " + player.getName());
         }
@@ -47,8 +47,8 @@ public class StaffModeManager {
         if (playersInStaffMode.get(player) == null) return;
         StaffModeUtil.removeStaffMode(player);
         try {
-            Bukkit.getServer().dispatchCommand(Bukkit.getServer().getConsoleSender(),
-                    FileManager.get("config").getString("vanish-command") + player.getName());
+            Bukkit.getServer().dispatchCommand(Bukkit.getConsoleSender(),
+                    FileManager.get("config").getString("vanish-command").replace("{player}", player.getName()));
         } catch (Exception e) {
             StaffPlus.LOGGER.severe("Error while exiting staff mode! Unable to show the player: " + player.getName());
         }

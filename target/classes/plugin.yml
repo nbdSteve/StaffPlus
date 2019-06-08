@@ -1,5 +1,5 @@
 name: FrontierStaff
-version: 1.0.1
+version: 1.0.3
 main: dev.nuer.sp.StaffPlus
 api-version: 1.13
 prefix: Staff+

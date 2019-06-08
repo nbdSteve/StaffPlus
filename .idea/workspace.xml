@@ -7,35 +7,24 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="502dbd84-d9c1-4654-9430-62e19e50a3b9" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/artifacts/staff_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/staff_.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/dev/nuer/sp/StaffPlus.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dev/nuer/sp/StaffPlus.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/dev/nuer/sp/cmd/FreezeCmd.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dev/nuer/sp/cmd/FreezeCmd.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/dev/nuer/sp/cmd/RestoreCmd.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dev/nuer/sp/cmd/RestoreCmd.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/dev/nuer/sp/cmd/StaffChatCmd.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dev/nuer/sp/cmd/StaffChatCmd.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/dev/nuer/sp/cmd/StaffModeCmd.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dev/nuer/sp/cmd/StaffModeCmd.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/dev/nuer/sp/cmd/UnfreezeCmd.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dev/nuer/sp/cmd/UnfreezeCmd.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/dev/nuer/sp/listeners/PlayerDeathListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dev/nuer/sp/listeners/PlayerDeathListener.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/dev/nuer/sp/listeners/PlayerFreezeListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dev/nuer/sp/listeners/PlayerFreezeListener.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/dev/nuer/sp/listeners/StaffChatListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dev/nuer/sp/listeners/StaffChatListener.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/dev/nuer/sp/listeners/StaffModeInventoryListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dev/nuer/sp/listeners/StaffModeInventoryListener.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/dev/nuer/sp/listeners/StaffToolListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dev/nuer/sp/listeners/StaffToolListener.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/dev/nuer/sp/managers/FreezeManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dev/nuer/sp/managers/FreezeManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/dev/nuer/sp/managers/InventoryRestoreManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dev/nuer/sp/managers/InventoryRestoreManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/dev/nuer/sp/managers/StaffChatManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dev/nuer/sp/managers/StaffChatManager.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/dev/nuer/sp/managers/StaffModeManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dev/nuer/sp/managers/StaffModeManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/dev/nuer/sp/utils/RandomTeleportUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dev/nuer/sp/utils/RandomTeleportUtil.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/dev/nuer/sp/utils/StaffModeUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dev/nuer/sp/utils/StaffModeUtil.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/data/player-inventory-data.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/plugin.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/plugin.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/staff+.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/staff+.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/StaffPlus-1.0-SNAPSHOT-shaded.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/StaffPlus-1.0-SNAPSHOT-shaded.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/StaffPlus-1.0-SNAPSHOT.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/data/player-inventory-data.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/dev/nuer/sp/listeners/StaffToolListener.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/dev/nuer/sp/listeners/StaffToolListener.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/FrontierStaff-1.0-SNAPSHOT.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/StaffPlus-1.0-SNAPSHOT-shaded.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/StaffPlus-1.0.1-shaded.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/StaffPlus-1.0.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/dev/nuer/sp/listeners/PlayerFreezeListener.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/dev/nuer/sp/listeners/PlayerFreezeListener.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/dev/nuer/sp/managers/FreezeManager.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/dev/nuer/sp/managers/FreezeManager.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/dev/nuer/sp/managers/StaffModeManager.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/dev/nuer/sp/managers/StaffModeManager.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/plugin.yml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/plugin.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/original-StaffPlus-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/original-StaffPlus-1.0-SNAPSHOT.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/staff+.yml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/staff+.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-archiver/pom.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/original-StaffPlus-1.0-SNAPSHOT.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/original-StaffPlus-1.0.1.jar" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -53,8 +42,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/dev/nuer/sp/managers/StaffModeManager.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="230">
-              <caret line="50" column="74" selection-start-line="50" selection-start-column="74" selection-end-line="50" selection-end-column="74" />
+            <state relative-caret-position="958">
+              <caret line="48" column="13" selection-start-line="48" selection-start-column="13" selection-end-line="48" selection-end-column="13" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -63,10 +52,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/staff+.yml">
+        <entry file="file://$PROJECT_DIR$/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="24">
-              <caret line="1" column="19" selection-start-line="1" selection-start-column="19" selection-end-line="1" selection-end-column="19" />
+            <state relative-caret-position="192">
+              <caret line="8" column="18" selection-start-line="8" selection-start-column="18" selection-end-line="8" selection-end-column="18" />
             </state>
           </provider>
         </entry>
@@ -115,15 +104,15 @@
         <option value="$PROJECT_DIR$/src/main/java/dev/nuer/sp/cmd/StaffModeCmd.java" />
         <option value="$PROJECT_DIR$/src/main/java/dev/nuer/sp/cmd/UnfreezeCmd.java" />
         <option value="$PROJECT_DIR$/src/main/java/dev/nuer/sp/listeners/PlayerDeathListener.java" />
-        <option value="$PROJECT_DIR$/src/main/java/dev/nuer/sp/listeners/PlayerFreezeListener.java" />
-        <option value="$PROJECT_DIR$/src/main/java/dev/nuer/sp/managers/FreezeManager.java" />
         <option value="$PROJECT_DIR$/src/main/java/dev/nuer/sp/managers/InventoryRestoreManager.java" />
         <option value="$PROJECT_DIR$/src/main/java/dev/nuer/sp/managers/StaffChatManager.java" />
         <option value="$PROJECT_DIR$/src/main/java/dev/nuer/sp/utils/RandomTeleportUtil.java" />
         <option value="$PROJECT_DIR$/src/main/java/dev/nuer/sp/utils/StaffModeUtil.java" />
-        <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/dev/nuer/sp/managers/StaffModeManager.java" />
         <option value="$PROJECT_DIR$/src/main/resources/staff+.yml" />
+        <option value="$PROJECT_DIR$/src/main/java/dev/nuer/sp/managers/StaffModeManager.java" />
+        <option value="$PROJECT_DIR$/src/main/java/dev/nuer/sp/managers/FreezeManager.java" />
+        <option value="$PROJECT_DIR$/src/main/java/dev/nuer/sp/listeners/PlayerFreezeListener.java" />
+        <option value="$PROJECT_DIR$/pom.xml" />
       </list>
     </option>
   </component>
@@ -197,6 +186,15 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="sp" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="StaffPlus" type="b2602c69:ProjectViewProjectNode" />
+              <item name="StaffPlus" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="sp" type="462c0819:PsiDirectoryNode" />
+              <item name="listeners" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="StaffPlus" type="b2602c69:ProjectViewProjectNode" />
@@ -291,13 +289,14 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-1928" y="-8" width="1936" height="1096" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Designer" order="0" />
       <window_info id="UI Designer" order="1" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Favorites" order="3" side_tool="true" />
       <window_info id="Image Layers" order="4" />
-      <window_info content_ui="combo" id="Project" order="5" visible="true" weight="0.25799572" />
+      <window_info content_ui="combo" id="Project" order="5" visible="true" weight="0.26066098" />
       <window_info id="Structure" order="6" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Terminal" order="0" />
       <window_info anchor="bottom" id="Event Log" order="1" side_tool="true" />
@@ -313,7 +312,7 @@
       <window_info anchor="right" id="Theme Preview" order="0" />
       <window_info anchor="right" id="Capture Analysis" order="1" />
       <window_info anchor="right" id="Palette&#9;" order="2" />
-      <window_info active="true" anchor="right" id="Maven" order="3" visible="true" weight="0.10607676" />
+      <window_info anchor="right" id="Maven" order="3" visible="true" weight="0.10607676" />
       <window_info anchor="right" id="Palette" order="4" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="5" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="6" weight="0.25" />
@@ -440,9 +439,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/data/player-inventory-data.yml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/data/player-inventory-data.yml" />
     <entry file="file://$PROJECT_DIR$/src/main/java/dev/nuer/sp/listeners/StaffModeInventoryListener.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
@@ -520,26 +517,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/dev/nuer/sp/listeners/PlayerFreezeListener.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="15" column="61" selection-start-line="15" selection-start-column="61" selection-end-line="15" selection-end-column="61" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/dev/nuer/sp/managers/FreezeManager.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="264">
-          <caret line="18" column="57" selection-start-line="18" selection-start-column="57" selection-end-line="18" selection-end-column="57" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/dev/nuer/sp/managers/InventoryRestoreManager.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="646">
@@ -590,17 +567,30 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
+    <entry file="file://$PROJECT_DIR$/src/main/java/dev/nuer/sp/managers/StaffModeManager.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="192">
-          <caret line="8" column="18" selection-start-line="8" selection-start-column="18" selection-end-line="8" selection-end-column="18" />
+        <state relative-caret-position="958">
+          <caret line="48" column="13" selection-start-line="48" selection-start-column="13" selection-end-line="48" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/dev/nuer/sp/managers/StaffModeManager.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/dev/nuer/sp/listeners/PlayerFreezeListener.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="230">
-          <caret line="50" column="74" selection-start-line="50" selection-start-column="74" selection-end-line="50" selection-end-column="74" />
+        <state relative-caret-position="39">
+          <caret line="39" column="82" lean-forward="true" selection-start-line="39" selection-start-column="82" selection-end-line="39" selection-end-column="82" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/dev/nuer/sp/managers/FreezeManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="526">
+          <caret line="44" column="67" selection-start-line="44" selection-start-column="67" selection-end-line="44" selection-end-column="67" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -610,7 +600,14 @@
     <entry file="file://$PROJECT_DIR$/src/main/resources/staff+.yml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="24">
-          <caret line="1" column="19" selection-start-line="1" selection-start-column="19" selection-end-line="1" selection-end-column="19" />
+          <caret line="1" column="16" lean-forward="true" selection-start-line="1" selection-start-column="16" selection-end-line="1" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="192">
+          <caret line="8" column="18" selection-start-line="8" selection-start-column="18" selection-end-line="8" selection-end-column="18" />
         </state>
       </provider>
     </entry>

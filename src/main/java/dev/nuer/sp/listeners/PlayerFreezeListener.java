@@ -9,7 +9,6 @@ import org.bukkit.event.entity.EntityDamageEvent;
 import org.bukkit.event.inventory.InventoryOpenEvent;
 import org.bukkit.event.player.PlayerDropItemEvent;
 import org.bukkit.event.player.PlayerInteractEvent;
-import org.bukkit.event.player.PlayerMoveEvent;
 import org.bukkit.event.player.PlayerPickupItemEvent;
 
 /**
@@ -19,12 +18,6 @@ public class PlayerFreezeListener implements Listener {
 
     @EventHandler
     public void playerInteract(PlayerInteractEvent event) {
-        if (event.isCancelled()) return;
-        if (FreezeManager.frozenPlayers.contains(event.getPlayer())) event.setCancelled(true);
-    }
-
-    @EventHandler
-    public void playerMove(PlayerMoveEvent event) {
         if (event.isCancelled()) return;
         if (FreezeManager.frozenPlayers.contains(event.getPlayer())) event.setCancelled(true);
     }

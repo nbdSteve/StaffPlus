@@ -1,5 +1,5 @@
 staff-chat-prefix: '&4&l[&c&lSC&4&l] &6{sender}&e: &c'
-vanish-command: 'v '
+vanish-command: 'sudo {player} v'
 
 tools:
   freeze:
